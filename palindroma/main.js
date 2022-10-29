@@ -3,13 +3,13 @@
 /*===========================
       functions
 ===========================*/
-function isPalindrome(word1, word2) {
-   let invertedWord1 = '';
-   for (let i = word1.length - 1; i >= 0; i--) {
-      invertedWord1 += word1[i];
+function isPalindrome(word) {
+   let invertedWord = '';
+   for (let i = word.length - 1; i >= 0; i--) {
+      invertedWord += word[i];
    }
 
-   if (invertedWord1 === word2) {
+   if (invertedWord === word) {
       return true;
    }
    return false;
@@ -20,8 +20,7 @@ function isPalindrome(word1, word2) {
 ===========================*/
 // i due dati di ingresso devono essere per forza due stringhe
 const word1 = prompt('inserisci parola-1');
-const word2 = prompt('inserisci parola-2');
-if (isPalindrome(word1, word2)) {
+if (isPalindrome(word1)) {
    alert('auguri la parola è palindroma');
 } else {
    alert('bruh non è palindroma');
