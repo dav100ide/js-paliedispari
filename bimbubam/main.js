@@ -30,11 +30,10 @@ while (userChoice !== 'pari' && userChoice !== 'dispari') {
 let userNumber = Number(prompt('scegli da 1 a 5'));
 // input validation
 while (userNumber < 1 || userNumber > 5) {
-   userNumber = prompt('UN NUMERO DA 1 A 5 BRUH');
+   userNumber = Number(prompt('UN NUMERO DA 1 A 5 BRUH'));
 }
 
 const sum = userNumber + getRndInteger(1, 5);
-console.log(sum);
 if (isEven(sum) && userChoice === 'pari') {
    alert(`la somma è ${sum}, hai vinto`);
 } else if (isEven(sum) && userChoice === `dispari`) {
@@ -44,3 +43,4 @@ if (isEven(sum) && userChoice === 'pari') {
 } else {
    alert(`la somma è ${sum}, hai perso`);
 }
+console.log(userNumber, sum);
