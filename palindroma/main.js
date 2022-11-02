@@ -9,7 +9,7 @@ function isPalindrome(word) {
       invertedWord += word[i];
    }
 
-   if (invertedWord === word) {
+   if (invertedWord.toLowerCase === word.toLowerCase) {
       return true;
    }
    return false;

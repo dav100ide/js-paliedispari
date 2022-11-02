@@ -34,11 +34,7 @@ while (userNumber < 1 || userNumber > 5) {
 }
 
 const sum = userNumber + getRndInteger(1, 5);
-if (isEven(sum) && userChoice === 'pari') {
-   alert(`la somma è ${sum}, hai vinto`);
-} else if (isEven(sum) && userChoice === `dispari`) {
-   alert(`la somma è ${sum}, hai perso`);
-} else if (!isEven(sum) && userChoice === `dispari`) {
+if ((isEven(sum) && userChoice === 'pari') || (!isEven(sum) && userChoice === `dispari`)) {
    alert(`la somma è ${sum}, hai vinto`);
 } else {
    alert(`la somma è ${sum}, hai perso`);
